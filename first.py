@@ -3,9 +3,12 @@ class Animal:
 		self.species = species
 		self.name = name
 		self.age = age
+	def birthday(self):
+		print("Happy birthday, %s" % self.name)
+		self.age += 1
 
 
 bennett = Animal("Human", "Bennett", 20)
 print(bennett.age)
-bennett.age = 21
+bennett.birthday()
 print(bennett.age)
